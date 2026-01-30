@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Engineering Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media print {
+            .no-print { display: none; }
+            body { background: white; padding: 0; margin: 0; }
+            .page-break { page-break-before: always; }
+        }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        .blueprint-box { border: 2px solid #e2e8f0; border-left: 6px solid #3b82f6; }
+        .template-card { border: 1px solid #e2e8f0; height: 100%; transition: transform 0.2s; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; }
+        .badge-academic { background: #dcfce7; color: #166534; }
+        .badge-writing { background: #dbeafe; color: #1e40af; }
+        .badge-creative { background: #fef9c3; color: #854d0e; }
+        .badge-tech { background: #f3e8ff; color: #6b21a8; }
+    </style>
+</head>
+<body class="bg-gray-50 p-4 md:p-8">
+
+    <!-- Header Section -->
+    <div class="max-w-5xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden border border-gray-200">
+        <div class="bg-blue-600 p-6 text-white text-center">
+            <h1 class="text-3xl font-extrabold tracking-tight">AI PROMPT ENGINEERING GUIDE</h1>
+            <p class="text-blue-100 mt-2 font-medium">Hands-on templates for turning vague requests into precise results • v2026.1</p>
+        </div>
+
+        <div class="p-6 md:p-10">
+            <!-- Part 1: The Blueprint -->
+            <section class="mb-10">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</div>
+                    <h2 class="text-2xl font-bold text-gray-800">The Prompt Blueprint</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="blueprint-box p-5 bg-blue-50 rounded-lg">
+                        <h3 class="font-bold text-blue-800 mb-3 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                            Key Ingredients
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li><strong>ROLE:</strong> Who is the AI? <em>(e.g., "You are a Chemist")</em></li>
+                            <li><strong>TASK:</strong> What is the specific action? <em>(e.g., "Explain...")</em></li>
+                            <li><strong>CONTEXT:</strong> Who is it for? <em>(e.g., "For 8th graders")</em></li>
+                            <li><strong>CONSTRAINTS:</strong> Length, tone, or rules? <em>(e.g., "No jargon")</em></li>
+                            <li><strong>OUTPUT:</strong> What format? <em>(e.g., "A 3-column table")</em></li>
+                        </ul>
+                    </div>
+
+                    <div class="border-2 border-dashed border-gray-300 p-5 rounded-lg flex flex-col">
+                        <h3 class="font-bold text-gray-800 mb-3">Quick Recipe Checklist</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center gap-2 text-sm text-gray-600">
+                                <input type="checkbox" class="rounded text-blue-600"> Audience & Goal specified?
+                            </label>
+                            <label class="flex items-center gap-2 text-sm text-gray-600">
+                                <input type="checkbox" class="rounded text-blue-600"> Length & Tone limited?
+                            </label>
+                            <label class="flex items-center gap-2 text-sm text-gray-600">
+                                <input type="checkbox" class="rounded text-blue-600"> Output format defined?
+                            </label>
+                            <label class="flex items-center gap-2 text-sm text-gray-600">
+                                <input type="checkbox" class="rounded text-blue-600"> Verification step requested?
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 2: Objective Templates -->
+            <section class="mb-10">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</div>
+                    <h2 class="text-3xl font-bold text-gray-800">Objective-Based Templates</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="template-card p-5 rounded-xl border border-gray-200 bg-white">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="badge badge-academic">Academic</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-slate-800 mb-4">Academic & Study</h3>
+                        <div class="space-y-3">
+                            <div class="template-row p-3 border border-slate-100 rounded-lg bg-slate-50/50">
+                                <p class="text-base font-bold text-slate-700 italic">Explain Concept</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Explain [concept] like I'm [age]. Use an analogy and a real-world example."</p>
+                            </div>
+                            <div class="template-row p-3 border border-slate-100 rounded-lg bg-slate-50/50">
+                                <p class="text-base font-bold text-slate-700 italic">Step-by-Step Guide</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Show me how to solve [problem] step-by-step. Explain the logic of each step."</p>
+                            </div>
+                            <div class="template-row p-3 border border-slate-100 rounded-lg bg-slate-50/50">
+                                <p class="text-base font-bold text-slate-700 italic">Improve Vocabulary</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Replace common words in this [paragraph] with more academic, precise terms."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="template-card p-5 rounded-xl border border-gray-200 bg-white">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="badge badge-writing">Writing</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-slate-800 mb-4">Writing & Communication</h3>
+                        <div class="space-y-3">
+                            <div class="template-row p-3 border border-slate-100 rounded-lg bg-slate-50/50">
+                                <p class="text-base font-bold text-slate-700 italic">Rewrite / Summarize</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Summarize [text] for [audience] in [length]. Focus on [key points]."</p>
+                            </div>
+                            <div class="template-row p-3 border border-slate-100 rounded-lg bg-slate-50/50">
+                                <p class="text-base font-bold text-slate-700 italic">Writing Assistant</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Act as an editor. Review my [essay/draft] for flow and clarity. Suggest 3 specific edits."</p>
+                            </div>
+                            <div class="template-row p-3 border border-slate-100 rounded-lg bg-slate-50/50">
+                                <p class="text-base font-bold text-slate-700 italic">Professional Email</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Write a [tone] email to [recipient] regarding [subject]. Goal: [ask/decline/thank]."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="template-card p-5 rounded-xl border border-gray-200 bg-white">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="badge badge-creative">Creative</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-slate-800 mb-4">Brainstorm & Fun</h3>
+                        <div class="space-y-3">
+                            <div class="template-row p-3 border border-slate-100 rounded-lg bg-slate-50/50">
+                                <p class="text-base font-bold text-slate-700 italic">Entertainment / Games</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Create a text-based adventure game set in [setting]. Give me 3 choices per turn."</p>
+                            </div>
+                            <div class="template-row p-3 border border-slate-100 rounded-lg bg-slate-50/50">
+                                <p class="text-base font-bold text-slate-700 italic">Gift Ideas</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Suggest 5 gift ideas for a [age/gender] who likes [interests]. Budget: $[amount]."</p>
+                            </div>
+                            <div class="template-row p-3 border border-slate-100 rounded-lg bg-slate-50/50">
+                                <p class="text-base font-bold text-slate-700 italic">Brainstorming</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Generate 10 'wild' ideas for [project/theme]. No idea is too crazy. Format: Bullet list."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="template-card p-5 rounded-xl border border-gray-200 bg-white">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="badge badge-writing">Language</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-slate-800 mb-4">Language Learning</h3>
+                        <div class="space-y-3">
+                            <div class="template-row p-3 border border-slate-100 rounded-lg bg-slate-50/50">
+                                <p class="text-base font-bold text-slate-700 italic">Partner Roleplay</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Act as a native [language] speaker. Let's talk about [topic]. Ask one question at a time."</p>
+                            </div>
+                            <div class="template-row p-3 border border-slate-100 rounded-lg bg-slate-50/50">
+                                <p class="text-base font-bold text-slate-700 italic">Level-Specific Essay</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Write a 200-word essay on [topic] using [CEFR Level] vocabulary in [language]."</p>
+                            </div>
+                            <div class="template-row p-3 border border-slate-100 rounded-lg bg-slate-50/50">
+                                <p class="text-base font-bold text-slate-700 italic">Grammar & Punctuation</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Analyze this sentence for grammar errors. Explain why they are wrong and show the fix."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="template-card p-5 rounded-xl border border-gray-200 bg-white">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="badge badge-tech">Tech</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-slate-800 mb-4">Tech & Coding</h3>
+                        <div class="space-y-3">
+                            <div class="template-row p-3 border border-slate-100 rounded-lg bg-slate-50/50">
+                                <p class="text-base font-bold text-slate-700 italic">Generate Website</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Write a single HTML file with Tailwind CSS for a [type of site]. Include a hero and a footer."</p>
+                            </div>
+                            <div class="template-row p-3 border border-slate-100 rounded-lg bg-slate-50/50">
+                                <p class="text-base font-bold text-slate-700 italic">Debug Code</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Identify the bug in this [language] code: [paste code]. Explain how to fix it."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="template-card p-5 rounded-xl border border-blue-200 bg-blue-50">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="badge badge-creative">Planning</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-slate-800 mb-4">Personal Plan</h3>
+                        <div class="space-y-3">
+                            <div class="template-row p-3 border border-blue-100 rounded-lg bg-white/60">
+                                <p class="text-base font-bold text-slate-700 italic">Study Schedule</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Create a [timeframe] study schedule for [subject]. Focus on [weak area]. Max 1 hour/day."</p>
+                            </div>
+                            <div class="template-row p-3 border border-blue-100 rounded-lg bg-white/60">
+                                <p class="text-base font-bold text-slate-700 italic">Diet & Workout</p>
+                                <p class="text-sm text-slate-500 mt-1 leading-relaxed">"Design a 3-day meal plan and workout for [goal]. Constraints: [allergies/no equipment]."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Part 3: Debugging & Scoring -->
+            <section class="page-break">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-900 text-white p-7 rounded-xl">
+                        <h3 class="text-xl font-bold mb-4 mt-8 flex items-center gap-2 text-yellow-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                            The "Bad Answer" Fixes
+                        </h3>
+                        <div class="space-y-4 text-sm">
+                            <div class="border-l-2 border-yellow-400 pl-3">
+                                <p class="font-bold uppercase text-xs text-gray-400">Force a Plan</p>
+                                <p>"Outline your approach in 5 bullets first. Then answer."</p>
+                            </div>
+                            <div class="border-l-2 border-yellow-400 pl-3">
+                                <p class="font-bold uppercase text-xs text-gray-400">Remove Ambiguity</p>
+                                <p>"Ask me 3 clarifying questions before you generate the response."</p>
+                            </div>
+                            <div class="border-l-2 border-yellow-400 pl-3">
+                                <p class="font-bold uppercase text-xs text-gray-400">Ask for Reasoning</p>
+                                <p>"List your assumptions and explain 2 ways this could be wrong."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-2 border-blue-600 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold text-blue-600 mb-4">Prompt Quality Score</h3>
+                        <table class="w-full text-sm text-left">
+                            <thead class="bg-blue-50 text-blue-800 text-xs uppercase">
+                                <tr>
+                                    <th class="p-2">Check</th>
+                                    <th class="p-2 text-right">Points</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100">
+                                <tr><td class="p-2">Audience/Goal is explicit</td><td class="p-2 text-right font-bold text-blue-600">+1</td></tr>
+                                <tr><td class="p-2">Constraints (length/tone) set</td><td class="p-2 text-right font-bold text-blue-600">+1</td></tr>
+                                <tr><td class="p-2">Output format is specific</td><td class="p-2 text-right font-bold text-blue-600">+1</td></tr>
+                                <tr><td class="p-2">Role/Persona is defined</td><td class="p-2 text-right font-bold text-blue-600">+1</td></tr>
+                                <tr><td class="p-2">Few-shot (examples) provided</td><td class="p-2 text-right font-bold text-blue-600">+1</td></tr>
+                            </tbody>
+                        </table>
+                        <div class="mt-4 p-3 bg-blue-600 text-white rounded text-center">
+                            <span class="text-xs">TOTAL:</span> <span class="text-2xl font-bold">/ 5</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
